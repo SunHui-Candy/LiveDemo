@@ -1,0 +1,964 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		810B0CBF1F2EC95900F9666A /* SHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CBE1F2EC95900F9666A /* SHBaseViewController.m */; };
+		810B0CC21F2ECB2A00F9666A /* SHOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CC11F2ECB2A00F9666A /* SHOneViewController.m */; };
+		810B0CC51F2ECB3900F9666A /* SHTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CC41F2ECB3900F9666A /* SHTwoViewController.m */; };
+		810B0CC81F2ECB4900F9666A /* SHThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CC71F2ECB4900F9666A /* SHThreeViewController.m */; };
+		810B0CCB1F2ECCD500F9666A /* SHTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CCA1F2ECCD500F9666A /* SHTabBar.m */; };
+		810B0CCE1F2ECE2100F9666A /* SHCustomControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CCD1F2ECE2100F9666A /* SHCustomControl.m */; };
+		810B0CD31F2F18F400F9666A /* SHNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 810B0CD21F2F18F400F9666A /* SHNavgationController.m */; };
+		81120E7E1F316B4A00C117D7 /* SHHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E7D1F316B4A00C117D7 /* SHHttpTool.m */; };
+		81120E821F317DB700C117D7 /* SHBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E811F317DB700C117D7 /* SHBaseHandler.m */; };
+		81120E861F317EDA00C117D7 /* SHHotLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E851F317EDA00C117D7 /* SHHotLiveHandler.m */; };
+		81120E891F31A87500C117D7 /* SHLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E881F31A87500C117D7 /* SHLiveModel.m */; };
+		81120E8C1F31A88D00C117D7 /* SHCreatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E8B1F31A88D00C117D7 /* SHCreatorModel.m */; };
+		81120E8F1F31AAF800C117D7 /* SHMJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E8E1F31AAF800C117D7 /* SHMJExtensionConfig.m */; };
+		81120E921F31C1DE00C117D7 /* UIImageView+SHSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 81120E911F31C1DE00C117D7 /* UIImageView+SHSDWebImage.m */; };
+		811355F61F2B402D0052507E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811355F51F2B402D0052507E /* main.m */; };
+		811355FF1F2B402D0052507E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811355FD1F2B402D0052507E /* Main.storyboard */; };
+		811356011F2B402D0052507E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811356001F2B402D0052507E /* Assets.xcassets */; };
+		811356041F2B402D0052507E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811356021F2B402D0052507E /* LaunchScreen.storyboard */; };
+		8113560F1F2B402D0052507E /* SHLiveOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8113560E1F2B402D0052507E /* SHLiveOCTests.m */; };
+		8113561A1F2B402D0052507E /* SHLiveOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811356191F2B402D0052507E /* SHLiveOCUITests.m */; };
+		811356441F2B41DF0052507E /* SHTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811356431F2B41DF0052507E /* SHTabBarController.m */; };
+		811356471F2B41FF0052507E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811356461F2B41FF0052507E /* ViewController.m */; };
+		8113564A1F2B427A0052507E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811356491F2B427A0052507E /* AppDelegate.m */; };
+		813AED721F30205B007B1DCE /* SHNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 813AED711F30205B007B1DCE /* SHNavView.m */; };
+		813AED761F306DDD007B1DCE /* SHHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813AED741F306DDD007B1DCE /* SHHotViewController.m */; };
+		813AED7B1F306DF6007B1DCE /* SHNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813AED791F306DF6007B1DCE /* SHNearViewController.m */; };
+		813AED7C1F306DF6007B1DCE /* SHNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813AED7A1F306DF6007B1DCE /* SHNearViewController.xib */; };
+		813AED801F306E0E007B1DCE /* SHFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813AED7E1F306E0E007B1DCE /* SHFocusViewController.m */; };
+		813AED811F306E0E007B1DCE /* SHFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813AED7F1F306E0E007B1DCE /* SHFocusViewController.xib */; };
+		813AED851F307E33007B1DCE /* SHHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 813AED831F307E33007B1DCE /* SHHotCell.m */; };
+		813AED861F307E33007B1DCE /* SHHotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813AED841F307E33007B1DCE /* SHHotCell.xib */; };
+		D9F914F3AD5503B9EC73E99D /* libPods-SHLiveOC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AF559F07072897467735E2 /* libPods-SHLiveOC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8113560B1F2B402D0052507E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811355E91F2B402D0052507E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811355F01F2B402D0052507E;
+			remoteInfo = SHLiveOC;
+		};
+		811356161F2B402D0052507E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811355E91F2B402D0052507E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811355F01F2B402D0052507E;
+			remoteInfo = SHLiveOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061C8558F80B59E55B01C4D4 /* Pods-SHLiveOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHLiveOC.release.xcconfig"; path = "Pods/Target Support Files/Pods-SHLiveOC/Pods-SHLiveOC.release.xcconfig"; sourceTree = "<group>"; };
+		38F48017933C1C5408BF4433 /* Pods-SHLiveOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHLiveOC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SHLiveOC/Pods-SHLiveOC.debug.xcconfig"; sourceTree = "<group>"; };
+		810B0CBD1F2EC95900F9666A /* SHBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseViewController.h; sourceTree = "<group>"; };
+		810B0CBE1F2EC95900F9666A /* SHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseViewController.m; sourceTree = "<group>"; };
+		810B0CC01F2ECB2A00F9666A /* SHOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOneViewController.h; sourceTree = "<group>"; };
+		810B0CC11F2ECB2A00F9666A /* SHOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOneViewController.m; sourceTree = "<group>"; };
+		810B0CC31F2ECB3900F9666A /* SHTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTwoViewController.h; sourceTree = "<group>"; };
+		810B0CC41F2ECB3900F9666A /* SHTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTwoViewController.m; sourceTree = "<group>"; };
+		810B0CC61F2ECB4900F9666A /* SHThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHThreeViewController.h; sourceTree = "<group>"; };
+		810B0CC71F2ECB4900F9666A /* SHThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHThreeViewController.m; sourceTree = "<group>"; };
+		810B0CC91F2ECCD500F9666A /* SHTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTabBar.h; sourceTree = "<group>"; };
+		810B0CCA1F2ECCD500F9666A /* SHTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTabBar.m; sourceTree = "<group>"; };
+		810B0CCC1F2ECE2100F9666A /* SHCustomControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCustomControl.h; sourceTree = "<group>"; };
+		810B0CCD1F2ECE2100F9666A /* SHCustomControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCustomControl.m; sourceTree = "<group>"; };
+		810B0CCF1F2ECF3A00F9666A /* SHLive0C.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLive0C.pch; sourceTree = "<group>"; };
+		810B0CD01F2ED22F00F9666A /* SHLive0C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLive0C.h; sourceTree = "<group>"; };
+		810B0CD11F2F18F400F9666A /* SHNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavgationController.h; sourceTree = "<group>"; };
+		810B0CD21F2F18F400F9666A /* SHNavgationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavgationController.m; sourceTree = "<group>"; };
+		81120E7C1F316B4A00C117D7 /* SHHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHttpTool.h; sourceTree = "<group>"; };
+		81120E7D1F316B4A00C117D7 /* SHHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHttpTool.m; sourceTree = "<group>"; };
+		81120E7F1F317CBD00C117D7 /* SHAPIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAPIConfig.h; sourceTree = "<group>"; };
+		81120E801F317DB700C117D7 /* SHBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseHandler.h; sourceTree = "<group>"; };
+		81120E811F317DB700C117D7 /* SHBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseHandler.m; sourceTree = "<group>"; };
+		81120E841F317EDA00C117D7 /* SHHotLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHotLiveHandler.h; sourceTree = "<group>"; };
+		81120E851F317EDA00C117D7 /* SHHotLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHotLiveHandler.m; sourceTree = "<group>"; };
+		81120E871F31A87500C117D7 /* SHLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLiveModel.h; sourceTree = "<group>"; };
+		81120E881F31A87500C117D7 /* SHLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLiveModel.m; sourceTree = "<group>"; };
+		81120E8A1F31A88D00C117D7 /* SHCreatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHCreatorModel.h; sourceTree = "<group>"; };
+		81120E8B1F31A88D00C117D7 /* SHCreatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHCreatorModel.m; sourceTree = "<group>"; };
+		81120E8D1F31AAF800C117D7 /* SHMJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHMJExtensionConfig.h; sourceTree = "<group>"; };
+		81120E8E1F31AAF800C117D7 /* SHMJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHMJExtensionConfig.m; sourceTree = "<group>"; };
+		81120E901F31C1DE00C117D7 /* UIImageView+SHSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SHSDWebImage.h"; sourceTree = "<group>"; };
+		81120E911F31C1DE00C117D7 /* UIImageView+SHSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHSDWebImage.m"; sourceTree = "<group>"; };
+		811355F11F2B402D0052507E /* SHLiveOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHLiveOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811355F51F2B402D0052507E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		811355FE1F2B402D0052507E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		811356001F2B402D0052507E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811356031F2B402D0052507E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		811356051F2B402D0052507E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8113560A1F2B402D0052507E /* SHLiveOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHLiveOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8113560E1F2B402D0052507E /* SHLiveOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLiveOCTests.m; sourceTree = "<group>"; };
+		811356101F2B402D0052507E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811356151F2B402D0052507E /* SHLiveOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHLiveOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		811356191F2B402D0052507E /* SHLiveOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHLiveOCUITests.m; sourceTree = "<group>"; };
+		8113561B1F2B402D0052507E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811356421F2B41DF0052507E /* SHTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHTabBarController.h; sourceTree = "<group>"; };
+		811356431F2B41DF0052507E /* SHTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHTabBarController.m; sourceTree = "<group>"; };
+		811356451F2B41FF0052507E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		811356461F2B41FF0052507E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		811356481F2B427A0052507E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		811356491F2B427A0052507E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		813AED701F30205B007B1DCE /* SHNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNavView.h; sourceTree = "<group>"; };
+		813AED711F30205B007B1DCE /* SHNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNavView.m; sourceTree = "<group>"; };
+		813AED731F306DDD007B1DCE /* SHHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHotViewController.h; sourceTree = "<group>"; };
+		813AED741F306DDD007B1DCE /* SHHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHotViewController.m; sourceTree = "<group>"; };
+		813AED781F306DF6007B1DCE /* SHNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNearViewController.h; sourceTree = "<group>"; };
+		813AED791F306DF6007B1DCE /* SHNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNearViewController.m; sourceTree = "<group>"; };
+		813AED7A1F306DF6007B1DCE /* SHNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNearViewController.xib; sourceTree = "<group>"; };
+		813AED7D1F306E0E007B1DCE /* SHFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHFocusViewController.h; sourceTree = "<group>"; };
+		813AED7E1F306E0E007B1DCE /* SHFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHFocusViewController.m; sourceTree = "<group>"; };
+		813AED7F1F306E0E007B1DCE /* SHFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHFocusViewController.xib; sourceTree = "<group>"; };
+		813AED821F307E33007B1DCE /* SHHotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHotCell.h; sourceTree = "<group>"; };
+		813AED831F307E33007B1DCE /* SHHotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHotCell.m; sourceTree = "<group>"; };
+		813AED841F307E33007B1DCE /* SHHotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHHotCell.xib; sourceTree = "<group>"; };
+		86AF559F07072897467735E2 /* libPods-SHLiveOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SHLiveOC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		811355EE1F2B402D0052507E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F914F3AD5503B9EC73E99D /* libPods-SHLiveOC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356071F2B402D0052507E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356121F2B402D0052507E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B9295A80676A8436E95EE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38F48017933C1C5408BF4433 /* Pods-SHLiveOC.debug.xcconfig */,
+				061C8558F80B59E55B01C4D4 /* Pods-SHLiveOC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4FAECD274C86A5F85E00927B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86AF559F07072897467735E2 /* libPods-SHLiveOC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81120E7B1F316B3600C117D7 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				81120E7C1F316B4A00C117D7 /* SHHttpTool.h */,
+				81120E7D1F316B4A00C117D7 /* SHHttpTool.m */,
+				81120E7F1F317CBD00C117D7 /* SHAPIConfig.h */,
+				81120E901F31C1DE00C117D7 /* UIImageView+SHSDWebImage.h */,
+				81120E911F31C1DE00C117D7 /* UIImageView+SHSDWebImage.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		81120E831F317EC500C117D7 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				81120E841F317EDA00C117D7 /* SHHotLiveHandler.h */,
+				81120E851F317EDA00C117D7 /* SHHotLiveHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		811355E81F2B402D0052507E = {
+			isa = PBXGroup;
+			children = (
+				811355F31F2B402D0052507E /* SHLiveOC */,
+				8113560D1F2B402D0052507E /* SHLiveOCTests */,
+				811356181F2B402D0052507E /* SHLiveOCUITests */,
+				811355F21F2B402D0052507E /* Products */,
+				25B9295A80676A8436E95EE5 /* Pods */,
+				4FAECD274C86A5F85E00927B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		811355F21F2B402D0052507E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				811355F11F2B402D0052507E /* SHLiveOC.app */,
+				8113560A1F2B402D0052507E /* SHLiveOCTests.xctest */,
+				811356151F2B402D0052507E /* SHLiveOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		811355F31F2B402D0052507E /* SHLiveOC */ = {
+			isa = PBXGroup;
+			children = (
+				8113563A1F2B41A40052507E /* Base */,
+				8113563E1F2B41A40052507E /* Main */,
+				811356271F2B41440052507E /* One */,
+				811356311F2B41440052507E /* Three */,
+				811356351F2B41440052507E /* Two */,
+				8113562B1F2B41440052507E /* Other */,
+				811356481F2B427A0052507E /* AppDelegate.h */,
+				811356491F2B427A0052507E /* AppDelegate.m */,
+				811355F41F2B402D0052507E /* Supporting Files */,
+			);
+			path = SHLiveOC;
+			sourceTree = "<group>";
+		};
+		811355F41F2B402D0052507E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				811355FD1F2B402D0052507E /* Main.storyboard */,
+				811356001F2B402D0052507E /* Assets.xcassets */,
+				811356021F2B402D0052507E /* LaunchScreen.storyboard */,
+				811356051F2B402D0052507E /* Info.plist */,
+				811356451F2B41FF0052507E /* ViewController.h */,
+				811356461F2B41FF0052507E /* ViewController.m */,
+				811355F51F2B402D0052507E /* main.m */,
+				810B0CCF1F2ECF3A00F9666A /* SHLive0C.pch */,
+				810B0CD01F2ED22F00F9666A /* SHLive0C.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8113560D1F2B402D0052507E /* SHLiveOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				8113560E1F2B402D0052507E /* SHLiveOCTests.m */,
+				811356101F2B402D0052507E /* Info.plist */,
+			);
+			path = SHLiveOCTests;
+			sourceTree = "<group>";
+		};
+		811356181F2B402D0052507E /* SHLiveOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				811356191F2B402D0052507E /* SHLiveOCUITests.m */,
+				8113561B1F2B402D0052507E /* Info.plist */,
+			);
+			path = SHLiveOCUITests;
+			sourceTree = "<group>";
+		};
+		811356271F2B41440052507E /* One */ = {
+			isa = PBXGroup;
+			children = (
+				81120E831F317EC500C117D7 /* Handlers */,
+				811356281F2B41440052507E /* Controllers */,
+				811356291F2B41440052507E /* Models */,
+				8113562A1F2B41440052507E /* Views */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
+		811356281F2B41440052507E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CC01F2ECB2A00F9666A /* SHOneViewController.h */,
+				810B0CC11F2ECB2A00F9666A /* SHOneViewController.m */,
+				813AED731F306DDD007B1DCE /* SHHotViewController.h */,
+				813AED741F306DDD007B1DCE /* SHHotViewController.m */,
+				813AED781F306DF6007B1DCE /* SHNearViewController.h */,
+				813AED791F306DF6007B1DCE /* SHNearViewController.m */,
+				813AED7A1F306DF6007B1DCE /* SHNearViewController.xib */,
+				813AED7D1F306E0E007B1DCE /* SHFocusViewController.h */,
+				813AED7E1F306E0E007B1DCE /* SHFocusViewController.m */,
+				813AED7F1F306E0E007B1DCE /* SHFocusViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		811356291F2B41440052507E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81120E871F31A87500C117D7 /* SHLiveModel.h */,
+				81120E881F31A87500C117D7 /* SHLiveModel.m */,
+				81120E8A1F31A88D00C117D7 /* SHCreatorModel.h */,
+				81120E8B1F31A88D00C117D7 /* SHCreatorModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8113562A1F2B41440052507E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				813AED701F30205B007B1DCE /* SHNavView.h */,
+				813AED711F30205B007B1DCE /* SHNavView.m */,
+				813AED821F307E33007B1DCE /* SHHotCell.h */,
+				813AED831F307E33007B1DCE /* SHHotCell.m */,
+				813AED841F307E33007B1DCE /* SHHotCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8113562B1F2B41440052507E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				81120E7B1F316B3600C117D7 /* NetWork */,
+				8113562E1F2B41440052507E /* Categray */,
+				8113562F1F2B41440052507E /* Helps */,
+				811356301F2B41440052507E /* Tools */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8113562E1F2B41440052507E /* Categray */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categray;
+			sourceTree = "<group>";
+		};
+		8113562F1F2B41440052507E /* Helps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helps;
+			sourceTree = "<group>";
+		};
+		811356301F2B41440052507E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CCC1F2ECE2100F9666A /* SHCustomControl.h */,
+				810B0CCD1F2ECE2100F9666A /* SHCustomControl.m */,
+				81120E8D1F31AAF800C117D7 /* SHMJExtensionConfig.h */,
+				81120E8E1F31AAF800C117D7 /* SHMJExtensionConfig.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		811356311F2B41440052507E /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				811356321F2B41440052507E /* Controllers */,
+				811356331F2B41440052507E /* Models */,
+				811356341F2B41440052507E /* Views */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		811356321F2B41440052507E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CC61F2ECB4900F9666A /* SHThreeViewController.h */,
+				810B0CC71F2ECB4900F9666A /* SHThreeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		811356331F2B41440052507E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		811356341F2B41440052507E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		811356351F2B41440052507E /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				811356361F2B41440052507E /* Controllers */,
+				811356371F2B41440052507E /* Models */,
+				811356381F2B41440052507E /* Views */,
+			);
+			path = Two;
+			sourceTree = "<group>";
+		};
+		811356361F2B41440052507E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CC31F2ECB3900F9666A /* SHTwoViewController.h */,
+				810B0CC41F2ECB3900F9666A /* SHTwoViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		811356371F2B41440052507E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		811356381F2B41440052507E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8113563A1F2B41A40052507E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8113563B1F2B41A40052507E /* Controllers */,
+				8113563C1F2B41A40052507E /* Models */,
+				8113563D1F2B41A40052507E /* Views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8113563B1F2B41A40052507E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CBD1F2EC95900F9666A /* SHBaseViewController.h */,
+				810B0CBE1F2EC95900F9666A /* SHBaseViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8113563C1F2B41A40052507E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8113563D1F2B41A40052507E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81120E801F317DB700C117D7 /* SHBaseHandler.h */,
+				81120E811F317DB700C117D7 /* SHBaseHandler.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8113563E1F2B41A40052507E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8113563F1F2B41A40052507E /* Controllers */,
+				811356401F2B41A40052507E /* Models */,
+				811356411F2B41A40052507E /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8113563F1F2B41A40052507E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				811356421F2B41DF0052507E /* SHTabBarController.h */,
+				811356431F2B41DF0052507E /* SHTabBarController.m */,
+				810B0CD11F2F18F400F9666A /* SHNavgationController.h */,
+				810B0CD21F2F18F400F9666A /* SHNavgationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		811356401F2B41A40052507E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		811356411F2B41A40052507E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				810B0CC91F2ECCD500F9666A /* SHTabBar.h */,
+				810B0CCA1F2ECCD500F9666A /* SHTabBar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		811355F01F2B402D0052507E /* SHLiveOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8113561E1F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOC" */;
+			buildPhases = (
+				C09A7B84280D733E927C1C30 /* [CP] Check Pods Manifest.lock */,
+				811355ED1F2B402D0052507E /* Sources */,
+				811355EE1F2B402D0052507E /* Frameworks */,
+				811355EF1F2B402D0052507E /* Resources */,
+				BA08A0362263BEEA9F024BF9 /* [CP] Embed Pods Frameworks */,
+				117C9965C6E0AC14BC88BC7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SHLiveOC;
+			productName = SHLiveOC;
+			productReference = 811355F11F2B402D0052507E /* SHLiveOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		811356091F2B402D0052507E /* SHLiveOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811356211F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOCTests" */;
+			buildPhases = (
+				811356061F2B402D0052507E /* Sources */,
+				811356071F2B402D0052507E /* Frameworks */,
+				811356081F2B402D0052507E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8113560C1F2B402D0052507E /* PBXTargetDependency */,
+			);
+			name = SHLiveOCTests;
+			productName = SHLiveOCTests;
+			productReference = 8113560A1F2B402D0052507E /* SHLiveOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		811356141F2B402D0052507E /* SHLiveOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811356241F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOCUITests" */;
+			buildPhases = (
+				811356111F2B402D0052507E /* Sources */,
+				811356121F2B402D0052507E /* Frameworks */,
+				811356131F2B402D0052507E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811356171F2B402D0052507E /* PBXTargetDependency */,
+			);
+			name = SHLiveOCUITests;
+			productName = SHLiveOCUITests;
+			productReference = 811356151F2B402D0052507E /* SHLiveOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		811355E91F2B402D0052507E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SH;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ios;
+				TargetAttributes = {
+					811355F01F2B402D0052507E = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V2HDPP64PV;
+						ProvisioningStyle = Automatic;
+					};
+					811356091F2B402D0052507E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 811355F01F2B402D0052507E;
+					};
+					811356141F2B402D0052507E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 811355F01F2B402D0052507E;
+					};
+				};
+			};
+			buildConfigurationList = 811355EC1F2B402D0052507E /* Build configuration list for PBXProject "SHLiveOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 811355E81F2B402D0052507E;
+			productRefGroup = 811355F21F2B402D0052507E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				811355F01F2B402D0052507E /* SHLiveOC */,
+				811356091F2B402D0052507E /* SHLiveOCTests */,
+				811356141F2B402D0052507E /* SHLiveOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		811355EF1F2B402D0052507E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811356041F2B402D0052507E /* LaunchScreen.storyboard in Resources */,
+				813AED811F306E0E007B1DCE /* SHFocusViewController.xib in Resources */,
+				811356011F2B402D0052507E /* Assets.xcassets in Resources */,
+				811355FF1F2B402D0052507E /* Main.storyboard in Resources */,
+				813AED861F307E33007B1DCE /* SHHotCell.xib in Resources */,
+				813AED7C1F306DF6007B1DCE /* SHNearViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356081F2B402D0052507E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356131F2B402D0052507E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		117C9965C6E0AC14BC88BC7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHLiveOC/Pods-SHLiveOC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA08A0362263BEEA9F024BF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SHLiveOC/Pods-SHLiveOC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C09A7B84280D733E927C1C30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		811355ED1F2B402D0052507E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810B0CBF1F2EC95900F9666A /* SHBaseViewController.m in Sources */,
+				81120E921F31C1DE00C117D7 /* UIImageView+SHSDWebImage.m in Sources */,
+				8113564A1F2B427A0052507E /* AppDelegate.m in Sources */,
+				810B0CC51F2ECB3900F9666A /* SHTwoViewController.m in Sources */,
+				813AED7B1F306DF6007B1DCE /* SHNearViewController.m in Sources */,
+				810B0CCE1F2ECE2100F9666A /* SHCustomControl.m in Sources */,
+				811356441F2B41DF0052507E /* SHTabBarController.m in Sources */,
+				813AED721F30205B007B1DCE /* SHNavView.m in Sources */,
+				813AED801F306E0E007B1DCE /* SHFocusViewController.m in Sources */,
+				81120E8C1F31A88D00C117D7 /* SHCreatorModel.m in Sources */,
+				810B0CC81F2ECB4900F9666A /* SHThreeViewController.m in Sources */,
+				810B0CD31F2F18F400F9666A /* SHNavgationController.m in Sources */,
+				81120E821F317DB700C117D7 /* SHBaseHandler.m in Sources */,
+				811356471F2B41FF0052507E /* ViewController.m in Sources */,
+				81120E8F1F31AAF800C117D7 /* SHMJExtensionConfig.m in Sources */,
+				81120E891F31A87500C117D7 /* SHLiveModel.m in Sources */,
+				810B0CCB1F2ECCD500F9666A /* SHTabBar.m in Sources */,
+				81120E7E1F316B4A00C117D7 /* SHHttpTool.m in Sources */,
+				81120E861F317EDA00C117D7 /* SHHotLiveHandler.m in Sources */,
+				813AED851F307E33007B1DCE /* SHHotCell.m in Sources */,
+				810B0CC21F2ECB2A00F9666A /* SHOneViewController.m in Sources */,
+				813AED761F306DDD007B1DCE /* SHHotViewController.m in Sources */,
+				811355F61F2B402D0052507E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356061F2B402D0052507E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8113560F1F2B402D0052507E /* SHLiveOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811356111F2B402D0052507E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8113561A1F2B402D0052507E /* SHLiveOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8113560C1F2B402D0052507E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811355F01F2B402D0052507E /* SHLiveOC */;
+			targetProxy = 8113560B1F2B402D0052507E /* PBXContainerItemProxy */;
+		};
+		811356171F2B402D0052507E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811355F01F2B402D0052507E /* SHLiveOC */;
+			targetProxy = 811356161F2B402D0052507E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		811355FD1F2B402D0052507E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				811355FE1F2B402D0052507E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		811356021F2B402D0052507E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				811356031F2B402D0052507E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8113561C1F2B402D0052507E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8113561D1F2B402D0052507E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8113561F1F2B402D0052507E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F48017933C1C5408BF4433 /* Pods-SHLiveOC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V2HDPP64PV;
+				GCC_PREFIX_HEADER = /Users/ios/Documents/iOSTest/LiveDemo/OCLiveDemo/SHLiveOC/SHLiveOC/SHLive0C.pch;
+				INFOPLIST_FILE = SHLiveOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		811356201F2B402D0052507E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 061C8558F80B59E55B01C4D4 /* Pods-SHLiveOC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V2HDPP64PV;
+				GCC_PREFIX_HEADER = /Users/ios/Documents/iOSTest/LiveDemo/OCLiveDemo/SHLiveOC/SHLiveOC/SHLive0C.pch;
+				INFOPLIST_FILE = SHLiveOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		811356221F2B402D0052507E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SHLiveOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHLiveOC.app/SHLiveOC";
+			};
+			name = Debug;
+		};
+		811356231F2B402D0052507E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SHLiveOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHLiveOC.app/SHLiveOC";
+			};
+			name = Release;
+		};
+		811356251F2B402D0052507E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SHLiveOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SHLiveOC;
+			};
+			name = Debug;
+		};
+		811356261F2B402D0052507E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SHLiveOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.SHLiveOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SHLiveOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		811355EC1F2B402D0052507E /* Build configuration list for PBXProject "SHLiveOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8113561C1F2B402D0052507E /* Debug */,
+				8113561D1F2B402D0052507E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8113561E1F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8113561F1F2B402D0052507E /* Debug */,
+				811356201F2B402D0052507E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811356211F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811356221F2B402D0052507E /* Debug */,
+				811356231F2B402D0052507E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811356241F2B402D0052507E /* Build configuration list for PBXNativeTarget "SHLiveOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811356251F2B402D0052507E /* Debug */,
+				811356261F2B402D0052507E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 811355E91F2B402D0052507E /* Project object */;
+}
