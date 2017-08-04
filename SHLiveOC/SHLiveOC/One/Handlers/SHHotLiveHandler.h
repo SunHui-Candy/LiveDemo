@@ -12,5 +12,13 @@
 
 //热门
 + (void)executeGetHotLiveTaskPage:(NSInteger)pageNum success:(SHSuccessBlock)success failed:(SHFailedBlock)failed;
+//下载广告
++ (void)executeGetAdvertiseWithSuccess:(SHSuccessBlock)success
+                                failed:(SHFailedBlock)failed;
+
+//附近
++ (void)executeNearLiveTaskWithSuccess:(SHSuccessBlock)success
+                                failed:(SHFailedBlock)failed;
+
 
 @end
